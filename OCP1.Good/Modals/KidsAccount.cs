@@ -1,0 +1,14 @@
+﻿namespace OCP1.Good.Modals
+{
+    public class KidsAccount : Account
+    {
+        public KidsAccount(string name, double initialBalance, string address) : base("KidsSaving", name, initialBalance, address)
+        {
+        }
+
+        public override double CalculateInterest()
+        {
+            return this.Balance * 0.3;
+        }
+    }
+}
