@@ -16,6 +16,6 @@ public class OfficeWorker : IEmployee
 
     public void Recharge()
     {
-        Console.WriteLine("Recharging...");
+        throw new NotImplementedException();
     }
 }

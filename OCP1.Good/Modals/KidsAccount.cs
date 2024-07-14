@@ -1,8 +1,11 @@
-﻿namespace OCP1.Good.Modals
+﻿using OCP1.Good.Enums;
+
+namespace OCP1.Good.Modals
 {
     public class KidsAccount : Account
     {
-        public KidsAccount(string name, double initialBalance, string address) : base("KidsSaving", name, initialBalance, address)
+        // add enum
+        public KidsAccount(string name, double initialBalance, string address) : base(AccountTypeConst.Kids, name, initialBalance, address)
         {
         }
 

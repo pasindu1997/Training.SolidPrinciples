@@ -16,7 +16,6 @@
             Name = name;
             Balance = initialBalance;
             Address = address;
-
         }
 
         public abstract double CalculateInterest();

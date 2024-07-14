@@ -1,8 +1,10 @@
-﻿namespace OCP1.Good.Modals
+﻿using OCP1.Good.Enums;
+
+namespace OCP1.Good.Modals
 {
     public class SavingAccount : Account
     {
-        public SavingAccount(string name, double initialBalance, string address) : base("Savings", name, initialBalance, address)
+        public SavingAccount(string name, double initialBalance, string address) : base(AccountTypeConst.Savings, name, initialBalance, address)
         {
         }
 

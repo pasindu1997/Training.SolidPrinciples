@@ -2,7 +2,7 @@
 
 namespace ISP2.Good.Models;
 
-public class OfficeWorker : IWorker, IEater, IRechargeable
+public class OfficeWorker : IWorker, IEater
 {
     public void Work()
     {
@@ -12,10 +12,5 @@ public class OfficeWorker : IWorker, IEater, IRechargeable
     public void Eat()
     {
         Console.WriteLine("Eating...");
-    }
-
-    public void Recharge()
-    {
-        Console.WriteLine("Recharging...");
     }
 }
