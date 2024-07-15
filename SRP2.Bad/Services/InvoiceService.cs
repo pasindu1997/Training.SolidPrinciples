@@ -26,6 +26,7 @@ namespace SRP2.Bad.Services
             {
                 // Logic for adding the invoice to the database
                 _dataSaver.SaveData($"Invoice {Name} with id {Id} added to the database.");
+                this.SendEmail();
             }
             catch (Exception ex)
             {
@@ -40,6 +41,7 @@ namespace SRP2.Bad.Services
             {
                 // Logic for deleting the invoice to the database
                 _dataSaver.SaveData($"Invoice {Name} with id {Id} DELETED from the database.");
+                this.SendEmail();
             }
             catch (Exception ex)
             {

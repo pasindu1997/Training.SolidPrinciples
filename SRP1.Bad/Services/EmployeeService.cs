@@ -21,7 +21,7 @@ public class EmployeeService
         }
         catch (Exception ex)
         {
-            //Saving error to a te
+            //Saving error to a file.
             File.WriteAllText(@"C:\ErrorLog.txt", ex.ToString());
         }
     }

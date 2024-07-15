@@ -5,25 +5,25 @@ namespace DIP1.Bad.Services
 {
     public class SwitchService
     {
-        private ISwitchable lightBulb;
+        private ISwitchable switchable;
 
         private bool SwitchOn;
 
-        public SwitchService(ISwitchable lightBulb)
+        public SwitchService(ISwitchable switchable)
         {
             this.SwitchOn = false;
-            this.lightBulb = lightBulb;
+            this.switchable = switchable;
         }
 
         public void Switch()
         {
             if (SwitchOn)
             {
-                lightBulb.TurnOff();
+                switchable.TurnOff();
             }
             else
             {
-                lightBulb.TurnOn();
+                switchable.TurnOn();
             }
 
             SwitchOn = !SwitchOn;

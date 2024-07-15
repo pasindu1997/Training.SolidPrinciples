@@ -16,7 +16,6 @@
             this.Name = name;
             this.Balance = initialBalance;
             this.Address = address;
-
         }
 
         public double CalculateInterest()
